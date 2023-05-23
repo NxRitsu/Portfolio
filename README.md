@@ -2,7 +2,7 @@
 
 Ce dépôt contient mon site portfolio, où je présente mon CV, mes compétences et d'autres informations professionnelles. Vous pouvez le consulter en ligne à l'adresse suivante : [nxritsu.github.io/Portfolio](https://nxritsu.github.io/Portfolio/HTML/index.html).
 
-[Cover](https://github.com/NxRitsu/Portfolio/blob/main/ressource/screenshot_portfolio.png)
+![Cover](https://github.com/NxRitsu/Portfolio/blob/main/ressource/screenshot_portfolio.png)
 
 ## Contenu
 
