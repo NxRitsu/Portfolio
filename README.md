@@ -24,6 +24,6 @@ Le site portfolio a été développé en utilisant les technologies suivantes :
 
 ## Contact
 
-Si vous avez des questions ou des suggestions concernant mon site portfolio, n'hésitez pas à me contacter. Vous pouvez me joindre via mon adresse e-mail : votre.email@exemple.com.
+Si vous avez des questions ou des suggestions concernant mon site portfolio, n'hésitez pas à me contacter. Vous pouvez me joindre via mon adresse e-mail : melvinlh76@gmail.com.
 
 Merci d'avoir visité mon site portfolio ! 🙌
