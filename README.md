@@ -1,6 +1,8 @@
-# portfolio
+# Portfolio
 
 Ce dépôt contient mon site portfolio, où je présente mon CV, mes compétences et d'autres informations professionnelles. Vous pouvez le consulter en ligne à l'adresse suivante : [lien_vers_votre_site_portfolio](https://www.mon-site-portfolio.com).
+
+![Screenshot](https://github.com/NxRitsu/portfolio/blob/main/ressource/screenshot_portfolio.png)
 
 ## Contenu
 
@@ -15,13 +17,12 @@ Le site portfolio comprend les éléments suivants :
 
 Le site portfolio a été développé en utilisant les technologies suivantes :
 
-- HTML5
-- CSS3
-- JavaScript
-- 
+- HTML5 😊
+- CSS3 😎
+- JavaScript 😄
+
 ## Contact
 
-Si vous avez des questions ou des suggestions concernant mon site portfolio, n'hésitez pas à me contacter. Vous pouvez me joindre via mon adresse e-mail : melvinlh76@gmail.com
+Si vous avez des questions ou des suggestions concernant mon site portfolio, n'hésitez pas à me contacter. Vous pouvez me joindre via mon adresse e-mail : votre.email@exemple.com.
 
-Merci d'avoir visité mon site portfolio !
-
+Merci d'avoir visité mon site portfolio ! 🙌
