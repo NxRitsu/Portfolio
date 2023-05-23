@@ -20,6 +20,7 @@ Le site portfolio a été développé en utilisant les technologies suivantes :
 - HTML5 😊
 - CSS3 😎
 - JavaScript 😄
+- Git 😝
 
 ## Contact
 
