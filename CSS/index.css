@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "MontHEAVY";
+    src: url("../Mont-HeavyDEMO.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container h1 {
+    z-index: 1;
+    position: relative;
+    color: white;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 32px;
+    line-height: 60px;
+    font-family: 'MontHEAVY';
+}
+
+.container h1 span {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+
+@media (max-width: 800px) {
+    .container h1 {
+        font-size: 60px;
+        letter-spacing: 19px;
+        line-height: 35px;
+    }
+
+    container h1 span {
+        font-size: 26px;
+    }
+}
+
+/*Button */
+
+.Button {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+
+    animation: flyingAnimation 1s infinite alternate ease-in-out; /* Animation de flottement */
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.Button button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+
+    margin-right: 50px;
+}
+
+.Button button:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+.Button button:focus {
+	outline: none;
+}
+
+@keyframes flyingAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Logo Github */
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
