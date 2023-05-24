@@ -96,7 +96,7 @@ body {
 
 @media (max-width: 1170px) {
     .container h1 {
-        font-size: 52px;
+        font-size: 60px;
         letter-spacing: 19px;
         line-height: 35px;
         transition: 500ms ease-in-out;
@@ -109,9 +109,31 @@ body {
     .Button button{
         width: 110px;
         height: 40px;
-        font-size: 12px;
-        font-weight: normal;
+        font-size: 14px;
+        font-weight: bold;
         border: 1px solid black;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container h1 {
+        font-size: 52px;
+        letter-spacing: 10px;
+        line-height: 35px;
+        transition: 500ms ease-in-out;
+    }
+
+    container h1 span {
+        font-size: 18px;
+    }
+
+    .Button button{
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        border: 0px;
         margin: 20px;
     }
 }
