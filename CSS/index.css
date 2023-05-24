@@ -61,9 +61,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 80px;
-
     animation: flyingAnimation 1s infinite alternate ease-in-out;
-    /* Animation de flottement */
+    flex-wrap: wrap;
 }
 
 .noselect {
