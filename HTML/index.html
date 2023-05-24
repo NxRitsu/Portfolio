@@ -31,20 +31,20 @@
         <!--<img src="" class="object" data-value="6" alt="">-->
 
         <div class="Button">
+
+            <button onclick="afficherPDF()" class="CV noselect">CV</button>
+
+            <button uk-toggle="target: #ModalQuiSuisJe" class="QuiSuisJe noselect">Qui suis-je ?</button>
+
             <a href="https://www.linkedin.com/in/melvin-prevost-b29106200/" target="_blank">
                 <button class="LinkedIn noselect">LinkedIn</button>
             </a>
-            <!-- <a href="../ressource/cv_melvin.pdf" download="cv_melvin.pdf" target="_blank"> -->
-            <button onclick="afficherPDF()" class="CV noselect">CV</button>
 
             <script>
                 function afficherPDF() {
                     window.open('../ressource/cv_melvin.pdf', '_blank');
                 }
             </script>
-            <!-- </a> -->
-
-            <button uk-toggle="target: #ModalQuiSuisJe" class="QuiSuisJe noselect">Qui suis-je ?</button>
         </div>
 
         <div class="container2">
