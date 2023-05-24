@@ -94,7 +94,7 @@ body {
 	outline: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1170px) {
     .container h1 {
         font-size: 52px;
         letter-spacing: 19px;
@@ -116,7 +116,7 @@ body {
     }
 }
 
-@media (min-width: 801px){
+@media (min-width: 1171px){
     .container h1{
         transition: 500ms ease-out;
     }
