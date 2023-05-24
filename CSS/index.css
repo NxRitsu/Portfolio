@@ -145,6 +145,28 @@ body {
     }
 }
 
+@media (max-width: 380px) {
+    .container h1 {
+        font-size: 45px;
+        letter-spacing: 8px;
+        line-height: 35px;
+        transition: 500ms ease-in-out;
+    }
+
+    container h1 span {
+        font-size: 18px;
+    }
+
+    .Button button {
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        border: 0px;
+        margin: 20px;
+    }
+}
+
 @media (min-width: 1171px) {
     .container h1 {
         transition: 500ms ease-out;
