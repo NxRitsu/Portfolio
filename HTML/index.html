@@ -17,6 +17,15 @@
 </head>
 
 <body>
+
+    <script>
+        const randomNumber = Math.floor(Math.random() * 3) + 1;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            changeBackground(randomNumber);
+        });
+    </script>
+
     <div class="container">
         <h1 class="object" data-value="3">PREVOST<br><span>MELVIN</span></h1>
         <!--<img src="" class="object" data-value="6" alt="">-->
@@ -29,13 +38,19 @@
             <button onclick="afficherPDF()" class="CV noselect">CV</button>
 
             <script>
-                function afficherPDF(){
+                function afficherPDF() {
                     window.open('../ressource/cv_melvin.pdf', '_blank');
                 }
             </script>
             <!-- </a> -->
 
             <button uk-toggle="target: #ModalQuiSuisJe" class="QuiSuisJe noselect">Qui suis-je ?</button>
+        </div>
+
+        <div class="container2">
+            <div class="square selected" id="square1" onclick="changeBackground(1)"></div>
+            <div class="square" id="square2" onclick="changeBackground(2)"></div>
+            <div class="square" id="square3" onclick="changeBackground(3)"></div>
         </div>
     </div>
 
