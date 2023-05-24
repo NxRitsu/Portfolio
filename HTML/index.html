@@ -25,18 +25,35 @@
             <a href="https://www.linkedin.com/in/melvin-prevost-b29106200/" target="_blank">
                 <button class="LinkedIn noselect">LinkedIn</button>
             </a>
-            <a href="../ressource/cv_melvin.pdf" download="cv_melvin.pdf" target="_blank">
-                <button class="CV noselect">CV</button>
-            </a>
+            <!-- <a href="../ressource/cv_melvin.pdf" download="cv_melvin.pdf" target="_blank"> -->
+            <button onclick="afficherPDF()" class="CV noselect">CV</button>
 
-            <button uk-toggle="target: #ModalWho" class="WhoIam noselect">Qui suis-je ?</button>
+            <script>
+                function afficherPDF(){
+                    window.open('../ressource/cv_melvin.pdf', '_blank');
+                }
+            </script>
+            <!-- </a> -->
+
+            <button uk-toggle="target: #ModalQuiSuisJe" class="QuiSuisJe noselect">Qui suis-je ?</button>
         </div>
     </div>
 
-    <!-- This is the modal "Who I Am" -->
-    <div id="ModalWho" class="uk-modal-full" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
+    <!-- This is the modal "Qui suis-je" -->
+    <div id="ModalQuiSuisJe" class="uk-flex-top uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
             <h2 class="uk-modal-title">Qui suis-je ?</h2>
+            <p>👨‍💻 Passionné par les nouvelles technologies et la cybersécurité , je suis actuellement étudiant en BTS
+                SIO Option Développement et j'ai hâte de rejoindre l'EPSI de Rennes en septembre 2023 pour préparer un
+                Bachelor IT - SysOps en alternance. <br><br>
+                🔍 Je suis à la recherche de nouvelles opportunités pour développer mes compétences et relever de
+                nouveaux défis dans un environnement collaboratif et stimulant. Si vous êtes intéressé par mon profil,
+                n'hésitez pas à me contacter pour discuter de vos besoins et de la manière dont je peux contribuer à
+                votre entreprise. 🤝<br><br>
+                ☎️ Contact<br>
+                E-mail : <a href="mailto:melvinlh76@gmail.com">melvinlh76@gmail.com</a><br>
+                Root-me : <a href="https://shorturl.at/mv467">Ritsu</a>
+            </p>
             <button class="uk-modal-close-default" type="button" uk-close></button>
         </div>
     </div>
