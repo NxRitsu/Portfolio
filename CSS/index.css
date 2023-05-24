@@ -3,6 +3,11 @@
     src: url("../Mont-HeavyDEMO.otf");
 }
 
+@font-face {
+    font-family: "LouisGeorgeCafeLight";
+    src: url("../Louis-George-Cafe-Light.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -187,4 +192,14 @@ body {
     .github-corner .octo-arm {
         animation: octocat-wave 560ms ease-in-out
     }
+}
+
+/*Modal "Qui suis-je" */
+
+#ModalQuiSuisJe p{
+    font-family: 'LouisGeorgeCafeLight';
+}
+
+#ModalQuiSuisJe h2 {
+    font-family: 'MontHEAVY';
 }
