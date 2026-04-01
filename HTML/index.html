@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio CV - Melvin PREVOST</title>
+    <title>Portfolio Dashboard - Melvin PREVOST</title>
 
     <!-- Google Fonts for a modern, clean typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Boxicons for modern icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -24,200 +24,254 @@
 
 <body>
 
-    <main class="cv-container">
+    <div class="app-dashboard">
 
-        <!-- SIDEBAR (Left Column) -->
-        <aside class="sidebar">
-            <div class="profile">
-                <div class="avatar">
-                    <img src="../ressource/photo_melvin.jpg" alt="Melvin Prevost">
-                </div>
+        <!-- SIDEBAR MENU : Navigation driven by buttons -->
+        <nav class="side-menu">
+            <div class="avatar-small">
+                <img src="../ressource/photo_melvin.jpg" alt="Melvin Prevost">
             </div>
+            <div class="menu-links">
+                <button class="menu-btn active" data-view="home" title="Accueil">
+                    <i class='bx bx-home-alt'></i> <span class="tooltip">Accueil</span>
+                </button>
+                <button class="menu-btn" data-view="skills" title="Compétences">
+                    <i class='bx bx-code-alt'></i> <span class="tooltip">Compétences</span>
+                </button>
+                <button class="menu-btn" data-view="experiences" title="Expériences">
+                    <i class='bx bx-briefcase'></i> <span class="tooltip">Expériences</span>
+                </button>
+                <button class="menu-btn" data-view="formations" title="Formations">
+                    <i class='bx bxs-graduation'></i> <span class="tooltip">Formations</span>
+                </button>
+                <button class="menu-btn" data-view="contact" title="Contact">
+                    <i class='bx bx-envelope'></i> <span class="tooltip">Contact</span>
+                </button>
+            </div>
+        </nav>
 
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">INFORMATIONS</h2>
-                <ul class="contact-info">
-                    <li><i class='bx bx-car'></i> Permis B - Véhiculé</li>
-                    <li><i class='bx bx-phone'></i> <a href="tel:0650843254">06 50 84 32 54</a></li>
-                    <li><i class='bx bx-envelope'></i> <a href="mailto:melvinlh76@gmail.com">melvinlh76@gmail.com</a>
-                    </li>
-                    <li><i class='bx bx-map'></i> Le Havre & Rennes</li>
-                </ul>
-            </section>
+        <!-- MAIN VIEW AREA : 100% height, zero scrollbar for desktop -->
+        <main class="view-area">
 
-            <span class="divider"></span>
-
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">COMPÉTENCES</h2>
-                <div class="skills-list">
-                    <div class="skill-category">
-                        <strong>OS :</strong> Windows, Linux, Windows Server
+            <!-- HOME SECTION -->
+            <section id="home" class="view-panel active-panel center-content">
+                <div class="hero-card fade-in-up">
+                    <div class="hero-avatar-large">
+                        <img src="../ressource/photo_melvin.jpg" alt="Profile">
                     </div>
-                    <div class="skill-category">
-                        <strong>Langages :</strong> C#, VB, PHP, Python, Powershell, JavaScript, SQL, HTML/CSS
-                    </div>
-                    <div class="skill-category">
-                        <strong>Réseaux et Sécurité :</strong> Cisco, HP, Aruba, Fortinet, pfSense, Ruckus Wifi
-                    </div>
-                    <div class="skill-category">
-                        <strong>Systèmes :</strong> AD, DNS, DHCP, GPO, RDS
-                    </div>
-                    <div class="skill-category">
-                        <strong>Surveillance :</strong> SentinelOne, Zabbix, ManageEngine, Cybereason
-                    </div>
-                    <div class="skill-category">
-                        <strong>Virtualisation :</strong> Hyper-V, VMWare, Docker
-                    </div>
-                    <div class="skill-category">
-                        <strong>Sauvegarde :</strong> Veeam, cBackup
-                    </div>
-                    <div class="skill-category">
-                        <strong>Gestion :</strong> GLPI, Vade
-                    </div>
-                </div>
-            </section>
-
-            <span class="divider"></span>
-
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">LANGUES</h2>
-                <ul class="languages-list">
-                    <li>Français (langue maternelle)</li>
-                    <li>Anglais (professionnel)</li>
-                </ul>
-            </section>
-
-            <span class="divider"></span>
-
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">SOFT SKILLS</h2>
-                <ul class="soft-skills">
-                    <li>Curieux</li>
-                    <li>Autonome</li>
-                    <li>Adaptabilité</li>
-                    <li>Capacité d'apprentissage</li>
-                </ul>
-            </section>
-        </aside>
-
-        <!-- MAIN CONTENT (Right Column) -->
-        <article class="main-content">
-
-            <header class="header">
-                <div class="header-titles">
                     <h1>Melvin <span>PREVOST</span></h1>
                     <h2>CHARGÉ DE PROJETS ET D'ADMINISTRATION SYSTÈMES ET RÉSEAUX</h2>
-                    <p class="description">Un état d'esprit cultivé par le sport, les nouvelles technologies et
-                        l'apprentissage personnel.</p>
+                    <p class="hero-bio">Un état d'esprit cultivé par le sport, les nouvelles technologies et l'apprentissage personnel.</p>
                 </div>
+            </section>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/melvinprevost/" target="_blank" class="social-btn"
-                        title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/NxRitsu" target="_blank" class="social-btn" title="GitHub"><i
-                            class='bx bxl-github'></i></a>
-                    <a href="https://www.root-me.org/Ritsu-750896?lang=fr" target="_blank" class="social-btn"
-                        title="Root-me"><i class='bx bx-terminal'></i></a>
+            <!-- SKILLS SECTION : Bento Grid (Aesthetic cards) -->
+            <section id="skills" class="view-panel">
+                <header class="panel-header text-center fade-in">
+                    <h2>Compétences Techniques</h2>
+                    <p class="subtitle">Mon écosystème technologique</p>
+                </header>
+                
+                <div class="bento-grid fade-in-up">
+                    
+                    <!-- Box 1: OS (Top Left) -->
+                    <div class="bento-card bento-os">
+                        <div class="card-icon"><i class='bx bx-desktop'></i></div>
+                        <h3>Systèmes d'Exploitation & Administration</h3>
+                        <div class="tags-container">
+                            <span class="tag">Windows</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">Active Directory</span>
+                            <span class="tag">DNS/DHCP</span>
+                            <span class="tag">GPO/RDS</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 2: Langages (Top Right) -->
+                    <div class="bento-card bento-dev">
+                        <div class="card-icon blue-icon"><i class='bx bx-code-curly'></i></div>
+                        <h3>Langages de Programmation</h3>
+                        <div class="tags-container">
+                            <span class="tag">C#</span>
+                            <span class="tag">VB</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Powershell</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 3: Reseau (Bottom Left) -->
+                    <div class="bento-card bento-network">
+                        <div class="card-icon dark-icon"><i class='bx bx-network-chart'></i></div>
+                        <h3>Réseaux & Sécurité</h3>
+                        <div class="tags-container">
+                            <span class="tag outline">Cisco</span>
+                            <span class="tag outline">HP</span>
+                            <span class="tag outline">Aruba</span>
+                            <span class="tag outline">Fortinet</span>
+                            <span class="tag outline">pfSense</span>
+                            <span class="tag outline">Ruckus Wifi</span>
+                            <span class="tag outline">SentinelOne</span>
+                            <span class="tag outline">Cybereason</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 4: Outils (Middle Right) -->
+                    <div class="bento-card bento-tools">
+                        <div class="card-icon"><i class='bx bx-wrench'></i></div>
+                        <h3>Outils & Virtualisation</h3>
+                        <div class="tags-container">
+                            <span class="tag">Hyper-V</span>
+                            <span class="tag">VMWare</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Veeam</span>
+                            <span class="tag">cBackup</span>
+                            <span class="tag">Zabbix</span>
+                            <span class="tag">ManageEngine</span>
+                            <span class="tag">GLPI</span>
+                            <span class="tag">Vade</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 5: Soft Skills (Bottom Right, Small) -->
+                    <div class="bento-card bento-soft">
+                        <div class="card-icon accent-icon"><i class='bx bx-user-voice'></i></div>
+                        <h3>Linguistique & Soft Skills</h3>
+                        <div class="tags-container">
+                            <span class="tag soft">Français (Natif)</span>
+                            <span class="tag soft">Anglais (Pro)</span>
+                            <span class="tag soft">Curieux</span>
+                            <span class="tag soft">Autonome</span>
+                            <span class="tag soft">Adaptabilité</span>
+                        </div>
+                    </div>
+
                 </div>
-            </header>
+            </section>
 
-            <nav class="navigation">
-                <button class="nav-btn active" data-target="experiences">Expériences</button>
-                <button class="nav-btn" data-target="formations">Formations</button>
-                <div class="nav-indicator"></div>
-            </nav>
-
-            <div class="content-sections">
-
-                <!-- EXPERIENCES SECTION -->
-                <section id="experiences" class="tab-section active-tab">
-                    <div class="timeline">
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Chargé de Projets et d'Administration Systèmes et Réseaux - CRAM</h3>
-                                <div class="timeline-date">SEPTEMBRE 2023 - ACTUEL - CONTRAT D'APPRENTISSAGE</div>
-                                <ul>
-                                    <li>Configuration et maintenance des équipements réseau</li>
-                                    <li>Installation, configuration et gestion des serveurs (Windows & Linux)</li>
-                                    <li>Gestion des sauvegardes - Supervision du SI</li>
-                                    <li>Support N2 - Gestion de projets</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Développeur - DBCOM</h3>
-                                <div class="timeline-date">JANVIER 2023 - FÉVRIER 2023 - STAGE</div>
-                                <p class="timeline-subtitle">Stage de 2ème année de BTS SIO (7 semaines)</p>
-                                <ul>
-                                    <li>Développement en PHP via le CMS "Joomla!" et manipulation de base de données
-                                        MySQL</li>
-                                    <li>Support technique pour les clients de l'agence</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Création de site internet - River's Pub</h3>
-                                <div class="timeline-date">MAI 2022 - JUIN 2022 - STAGE</div>
-                                <p class="timeline-subtitle">Stage de 1ère année de BTS (5 semaines)</p>
-                                <ul>
-                                    <li>Création du site internet du restaurant en HTML, CSS et JavaScript</li>
-                                </ul>
-                            </div>
-                        </div>
-
+            <!-- EXPERIENCES SECTION : 3 Flex Cards -->
+            <section id="experiences" class="view-panel center-layout">
+                <header class="panel-header text-center fade-in">
+                    <h2>Expériences Professionnelles</h2>
+                    <p class="subtitle">Mon parcours en entreprise</p>
+                </header>
+                
+                <div class="cards-container fade-in-up">
+                    
+                    <div class="info-card">
+                        <div class="card-ribbon">ACTUEL</div>
+                        <div class="card-dates">Sept 2023 - Aujourd'hui</div>
+                        <h3>Chargé de Projets et d'Administration Systèmes et Réseaux</h3>
+                        <h4 class="company"><i class='bx bxs-buildings'></i> CRAM (Alternance)</h4>
+                        <ul class="card-bullet-list">
+                            <li>Configuration et maintenance des équipements réseau</li>
+                            <li>Installation, configuration et gestion des serveurs (Windows & Linux)</li>
+                            <li>Gestion des sauvegardes - Supervision du SI</li>
+                            <li>Support N2 - Gestion de projets</li>
+                        </ul>
                     </div>
-                </section>
 
-                <!-- FORMATIONS SECTION -->
-                <section id="formations" class="tab-section">
-                    <div class="timeline">
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>MSc expert en informatique et SI (BAC +5)</h3>
-                                <div class="timeline-date">2024 - 2026</div>
-                                <p class="timeline-subtitle">EPSI - Rennes</p>
-                                <p>Parcours : Concevoir et sécuriser des solutions d'infrastructures virtualisées et
-                                    cloud</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Bachelor IT (BAC +3)</h3>
-                                <div class="timeline-date">2023 - 2024</div>
-                                <p class="timeline-subtitle">EPSI - Rennes</p>
-                                <p>Parcours : SysOps</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>BTS SIO (BAC +2)</h3>
-                                <div class="timeline-date">2021 - 2023</div>
-                                <p class="timeline-subtitle">StJoSup - Le Havre</p>
-                                <p>Parcours : Solutions logicielles et applications métiers (SLAM)</p>
-                            </div>
-                        </div>
-
+                    <div class="info-card">
+                        <div class="card-dates">Janv 2023 - Fév 2023</div>
+                        <h3>Développeur web</h3>
+                        <h4 class="company"><i class='bx bxs-buildings'></i> DBCOM (Stage 7 sem.)</h4>
+                        <ul class="card-bullet-list">
+                            <li>Développement en PHP via le CMS "Joomla!"</li>
+                            <li>Manipulation de base de données MySQL</li>
+                            <li>Support technique pour les clients de l'agence</li>
+                        </ul>
                     </div>
-                </section>
 
-            </div>
+                    <div class="info-card">
+                        <div class="card-dates">Mai 2022 - Juin 2022</div>
+                        <h3>Création de site internet</h3>
+                        <h4 class="company"><i class='bx bxs-buildings'></i> River's Pub (Stage 5 sem.)</h4>
+                        <ul class="card-bullet-list">
+                            <li>Création intégrale du site internet du restaurant</li>
+                            <li>Langages : HTML, CSS et JavaScript</li>
+                        </ul>
+                    </div>
 
-        </article>
-    </main>
+                </div>
+            </section>
+
+            <!-- FORMATIONS SECTION : 3 Flex Cards -->
+            <section id="formations" class="view-panel center-layout">
+                <header class="panel-header text-center fade-in">
+                    <h2>Formations</h2>
+                    <p class="subtitle">Mon parcours académique</p>
+                </header>
+
+                <div class="cards-container fade-in-up">
+                    
+                    <div class="info-card glass-card">
+                        <div class="card-ribbon primary">EN COURS</div>
+                        <div class="card-dates">2024 - 2026</div>
+                        <h3>MSc expert en informatique et SI (BAC +5)</h3>
+                        <h4 class="company"><i class='bx bxs-school'></i> EPSI - Rennes</h4>
+                        <p class="card-desc"><strong>Parcours :</strong> Concevoir et sécuriser des solutions d'infrastructures virtualisées et cloud</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="card-dates">2023 - 2024</div>
+                        <h3>Bachelor IT (BAC +3)</h3>
+                        <h4 class="company"><i class='bx bxs-school'></i> EPSI - Rennes</h4>
+                        <p class="card-desc"><strong>Parcours :</strong> SysOps</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="card-dates">2021 - 2023</div>
+                        <h3>BTS SIO (BAC +2)</h3>
+                        <h4 class="company"><i class='bx bxs-school'></i> StJoSup - Le Havre</h4>
+                        <p class="card-desc"><strong>Parcours :</strong> Solutions logicielles et applications métiers (SLAM)</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="view-panel center-layout">
+                <div class="contact-card fade-in-up">
+                    <div class="icon-header"><i class='bx bx-envelope'></i></div>
+                    <h2>Me Contacter</h2>
+                    <p class="contact-sub">N'hésitez pas à me joindre pour discuter d'opportunités !</p>
+                    
+                    <div class="contact-actions">
+                        <a href="mailto:melvinlh76@gmail.com" class="action-btn email-btn">
+                            <i class='bx bx-mail-send'></i> Envoyer un E-mail
+                        </a>
+                        <a href="tel:0650843254" class="action-btn phone-btn">
+                            <i class='bx bx-phone-call'></i> 06 50 84 32 54
+                        </a>
+                    </div>
+                    
+                    <div class="contact-info-blocks">
+                        <div class="info-block">
+                            <i class='bx bx-map pin'></i>
+                            <span>Le Havre & Rennes</span>
+                        </div>
+                        <div class="info-block">
+                            <i class='bx bx-car pin'></i>
+                            <span>Permis B - Véhiculé</span>
+                        </div>
+                    </div>
+
+                    <hr class="contact-divider">
+
+                    <div class="social-links-large">
+                        <a href="https://www.linkedin.com/in/melvinprevost/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/NxRitsu" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.root-me.org/Ritsu-750896?lang=fr" target="_blank" title="Root-me"><i class='bx bx-terminal'></i></a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
 
     <!-- JS perso -->
     <script src="../JS/index.js"></script>
